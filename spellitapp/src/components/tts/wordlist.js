@@ -1,29 +1,83 @@
-export const avaliableLangs = ['English','Swedish']
+const avaliableLangs = ['English','Swedish']
 
-export firstLevel = {
+const firstLevel = {
   'English': [
-    'hello'
+    'hello',
+    'good',
+    'camp',
+    'think',
+    'too',
+    'yelled',
+    'milk',
+    'self',
+    'flesh',
+    'slept'
   ],
   'Swedish': [
-    'hej'
+    'hej',
+    'under',
+    'säger',
+    'andra',
+    'alla',
+    'fick',
+    'stora',
+    'bra',
+    'hela',
+    'kunde',
   ]
 }
 
-export secondLevel = {
+const secondLevel = {
   'English': [
-    'fabrication'
+    'fabrication',
+    'through',
+    'straight',
+    'chief',
+    'bought',
+    'caught',
+    'breath',
+    'dough',
+    'author',
+    'weather',
   ],
   'Swedish': [
-    'fabrik'
+    'gäller',
+    'kontrast',
+    'axel',
+    'cykel',
+    'aktie',
+    'briljant',
+    'bröllopstårta',
+    'dödande',
+    'elfel',
+    'erövra',
   ]
 }
 
-export thirdLevel = {
+const thirdLevel = {
   'English': [
-    'rhythm'
+    'rhythm',
+    'league',
+    'fatigue',
+    'language',
+    'bachelor',
+    'liquor',
+    'colleague',
+    'ignorance',
+    'privilege',
+    'prophecy'
   ],
   'Swedish': [
-    'justera'
+    'justera',
+    'abonnemang',
+    'explosion',
+    'initiativ',
+    'konserter',
+    'lugnt',
+    'officiell',
+    'originell',
+    'positiv',
+    'programmera'
   ]
 }
 
