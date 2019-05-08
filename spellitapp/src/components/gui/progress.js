@@ -1,19 +1,17 @@
-//import { avaliableLangs } from './tts/wordlist.js'
-import React from 'react'
+import React from 'react';
 
 const Filler = (props) =>  {
   let amount = (props.currentWord/props.wordCount)*100;
   return (<div style={{width:`${amount}`}}/>);
 }
 
+//Does this even need to be a class?
 class ProgressBar extends React.Component {
   render() {
     const { wordCount, currentWord } = this.props;
     return (
       <div>
-        <div>
-          <Filler wordCount={wordCount} currentWord={currentWord}/>
-        </div>
+        <Filler wordCount={wordCount} currentWord={currentWord}/>
         <p>{currentWord}/{wordCount}</p>
       </div>
     );

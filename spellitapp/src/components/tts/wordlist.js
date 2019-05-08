@@ -1,7 +1,5 @@
-const avaliableLangs = ['English','Swedish']
-
 const firstLevel = {
-  'English': [
+  english: [
     'hello',
     'good',
     'camp',
@@ -13,7 +11,7 @@ const firstLevel = {
     'flesh',
     'slept'
   ],
-  'Swedish': [
+  swedish: [
     'hej',
     'under',
     'säger',
@@ -28,7 +26,7 @@ const firstLevel = {
 }
 
 const secondLevel = {
-  'English': [
+  english: [
     'fabrication',
     'through',
     'straight',
@@ -40,7 +38,7 @@ const secondLevel = {
     'author',
     'weather',
   ],
-  'Swedish': [
+  swedish: [
     'gäller',
     'kontrast',
     'axel',
@@ -55,7 +53,7 @@ const secondLevel = {
 }
 
 const thirdLevel = {
-  'English': [
+  english: [
     'rhythm',
     'league',
     'fatigue',
@@ -67,7 +65,7 @@ const thirdLevel = {
     'privilege',
     'prophecy'
   ],
-  'Swedish': [
+  swedish: [
     'justera',
     'abonnemang',
     'explosion',
@@ -80,5 +78,84 @@ const thirdLevel = {
     'programmera'
   ]
 }
+const levels = [
+   { english: [
+        'hello',
+        'good',
+        'camp',
+        'think',
+        'too',
+        'yelled',
+        'milk',
+        'self',
+        'flesh',
+        'slept'
+    ],
+  swedish: [
+        'hej',
+        'under',
+        'säger',
+        'andra',
+        'alla',
+        'fick',
+        'stora',
+        'bra',
+        'hela',
+        'kunde',
+    ]},
+   {
+    english: [
+        'fabrication',
+        'through',
+        'straight',
+        'chief',
+        'bought',
+        'caught',
+        'breath',
+        'dough',
+        'author',
+        'weather',
+      ],
+      swedish: [
+        'gäller',
+        'kontrast',
+        'axel',
+        'cykel',
+        'aktie',
+        'briljant',
+        'bröllopstårta',
+        'dödande',
+        'elfel',
+        'erövra',
+      ] 
+   },
+   {
+    english: [
+        'rhythm',
+        'league',
+        'fatigue',
+        'language',
+        'bachelor',
+        'liquor',
+        'colleague',
+        'ignorance',
+        'privilege',
+        'prophecy'
+      ],
+      swedish: [
+        'justera',
+        'abonnemang',
+        'explosion',
+        'initiativ',
+        'konserter',
+        'lugnt',
+        'officiell',
+        'originell',
+        'positiv',
+        'programmera'
+      ]
+   }
+]
+export {levels,firstLevel, secondLevel, thirdLevel}
 
-export default { avaliableLangs, firstLevel, secondLevel, thirdLevel}
+//levels[0-lvl][eng-lang][0-word]
