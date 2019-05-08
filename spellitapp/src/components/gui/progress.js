@@ -1,21 +1,26 @@
 import React from 'react';
+import './../../App.css';
 
 const Filler = (props) =>  {
-  let amount = (props.currentWord/props.wordCount)*100;
-  return (<div style={{width:`${amount}`}}/>);
+  let amount = (props.wordsDone/props.amount)*100;
+  return (<div className='progress-filler' style={{width:`${amount}%`}}/>);
 }
 
+//amountOfWords currentWordPosition
 //Does this even need to be a class?
-class ProgressBar extends React.Component {
-  render() {
-    const { wordCount, currentWord } = this.props;
+const ProgressBar = (props) => {
+    
+    const { currentWordPosition, amountOfWords, levelText } = props;
     return (
-      <div>
-        <Filler wordCount={wordCount} currentWord={currentWord}/>
-        <p>{currentWord}/{wordCount}</p>
-      </div>
+        <React.Fragment>
+            {levelText !== '' && <h4>{levelText}</h4>}
+            <div className='progressBar'>
+                <Filler amount={props.amountOfWords} wordsDone={props.currentWordPosition}/>
+            </div>
+            <p>{currentWordPosition}/{amountOfWords}</p>
+        </React.Fragment>
+
     );
-  }
 }
 
 export default ProgressBar;

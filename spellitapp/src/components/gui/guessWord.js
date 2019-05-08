@@ -6,11 +6,23 @@ class guessWord extends React.Component {
         wordGuess: '',
     }
 
+    componentDidUpdate(prevProp){
+        if(prevProp.word !== this.props.word){
+            this.setState({wordGuess: ''});
+        }
+    }
+
     onChange = (e) => { this.setState({[e.target.name]: e.target.value});}
 
     textToSpeech = () => {
-        const { word } = this.props;
-        window.responsiveVoice.speak(`${word}`,'US English Male');
+        const { word, language } = this.props;
+        if(language === 'english'){
+            window.responsiveVoice.speak(`${word}`,'US English Male');
+        }
+        else {
+            window.responsiveVoice.speak(`${word}`,'Swedish Male');
+        }
+        
     }
 
     render(){
